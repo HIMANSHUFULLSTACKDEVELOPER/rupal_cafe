@@ -1,12 +1,4 @@
-.navbar-default .navbar-toggle .icon-bar{
-	background-color: #8dc63f;
-}
-.main-menu .navbar-default .navbar-nav .active a{
-	color: #8dc63f;
-}
-.main-menu nav li a::after {
-    background: #8dc63f;
-}
+
 .typer{
 	color: #8dc63f !important;
 }

@@ -45,19 +45,17 @@
     }
 }
 @media (max-width: 768px) {
-	.main-menu nav li a{
-		padding: 15px 0px;
-	}
-	.navbar-toggle{
-		top: 35px;
-	}
-	.navbar-nav{
-		background: #202020;
-		margin: 0px 0px;
-	}
+	
 	.banner {
 		min-height: 800px !important;
 		background-size: inherit;
+	}
+	.banner {
+		background: url(../images/f4200489-8952-4fec-a4fe-a16df9c91ac6.png) no-repeat center top;
+		background-attachment: fixed;
+		background-size: cover;
+		height: 130vh;
+		width: 100%;
 	}
 	.team-main{
 		background-size: inherit;
@@ -105,49 +103,7 @@
 	.offer-item div h3{
 		font-size: 16px;
 	}
-	.fixed-menu .navbar-toggle{
-		top: 18px;
-	}
-	.navbar-brand > img {
-		max-width: 180px;
-	}
-	.tab-title-menu h2{
-		font-size:14px;
-	}
-	[class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
-		font-size: 35px;
-	}
-	.tab-menu .slick-arrow.slick-prev{
-		position:absolute;
-		top: -36px;
-		background:#e75b1e url(../images/back.png) no-repeat center;
-		text-indent: -99999px;
-		border:none;
-		width: 32px;
-		height: 32px;
-		border-radius: 50%;
-		background-position: 2px 4px;
-	}
-	.tab-menu .slick-arrow.slick-prev:hover{
-		background:#e75b1e url(../images/back_hover.png) no-repeat center;
-		background-position: 2px 4px;
-	}
-	.tab-menu .slick-arrow.slick-next{
-		position:absolute;
-		top: -36px;
-		right:0px;
-		background: #e75b1e url(../images/next.png) no-repeat center;
-		text-indent: -99999px;
-		border:none;
-		width: 32px;
-		height: 32px;
-		border-radius: 50%;
-		background-position: 7px 4px;
-	}
-	.tab-menu .slick-arrow.slick-next:hover{
-		background:#e75b1e url(../images/next_hover.png) no-repeat center;
-		background-position: 7px 4px;
-	}
+	
 	.sf-team{
 		margin-bottom:20px;
 	}
@@ -171,9 +127,7 @@
 	.footer-box-a, .footer-box-b, .footer-box-c, .footer-box-d{
 		margin-bottom:20px;
 	}
-	.fixed-menu .main-menu nav li a{
-		padding: 10px 0px;
-	}
+	
 }
 @media (max-width: 600px) {
 	

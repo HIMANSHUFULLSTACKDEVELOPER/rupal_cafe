@@ -1,1 +1,0 @@
-# rupal_cafe

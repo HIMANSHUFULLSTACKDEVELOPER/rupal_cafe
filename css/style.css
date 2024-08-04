@@ -150,6 +150,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.80857;
     background-color: #000;
+
 }
 
 a {
@@ -273,8 +274,7 @@ blockquote {
 html,
 body {
     height: 100%;
-    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/823/934/small/set-icons-with-foods-doodle-with-foods-icons-on-black-background-vintage-food-set-icons-sweet-elements-background-for-your-project-menu-cafe-shop-free-vector.jpg);
-}
+     }
 
 /*------------------------------------------------------------------
    	Preloader
@@ -370,6 +370,7 @@ body {
     background-size: cover;
     height: 130vh;
     min-height: 100%;
+    
 }
 
 .banner .container,
@@ -568,7 +569,7 @@ body {
 -------------------------------------------------------------------*/
 
 .about-main {
-    background: #a78a8a;
+    
 }
 
 .pad-top-100 {
@@ -798,17 +799,57 @@ body {
 /*------------------------------------------------------------------
     MENU AREA
 -------------------------------------------------------------------*/
-#menu {
-    background-image: url(https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+
+#orderForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+#orderForm input, 
+#orderForm textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #000; /* Black text color */
+}
+
+#orderForm button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#orderForm button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#orderForm button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+#orderForm button#closeForm {
+    background-color: #dc3545;
+    color: #fff;
+    margin-left: 10px;
+}
+
+#orderForm button#closeForm:hover {
+    background-color: #c82333;
 }
 
 .menu-main .title-caption {
-    color: #eca0a0;
+    color: #d9e0d6;
 
-
+font-size: 30px;
 }
+
 
 .tab-title-menu {
     text-align: center;
@@ -1051,15 +1092,7 @@ body {
     GALLERY AREA
 -------------------------------------------------------------------*/
 
-.gallery {
-    background-image: url(https://cdn.georgeinstitute.org/sites/default/files/styles/width1920_fallback/public/2020-10/world-food-day-2020.png);
 
-}
-
-.gallery-main .title-caption {
-    color: #ffffff;
-    background-image: url(https://cdn.georgeinstitute.org/sites/default/files/styles/width1920_fallback/public/2020-10/world-food-day-2020.png);
-}
 
 /* new gallery */
 
@@ -1261,6 +1294,7 @@ body {
     width: 100%;
 }
 
+
 .overlay i {
     margin-top: 42%;
     border: 1px solid #fff;
@@ -1278,6 +1312,8 @@ body {
     text-align: center;
     padding: 65px 2% 0 2%;
 }
+
+
 
 .blog-dit p {
     font-size: 12px;
@@ -1327,12 +1363,13 @@ body {
 -------------------------------------------------------------------*/
 #booking {
     background: url(https://www.tavolino.co.uk/wp-content/uploads/2023/09/VariousEateries_Tavolino_LauraJalbert_2023-03_174.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .pricing-main {
-    background: url(../images/full-bg.png) no-repeat center;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnzoWqgWd3BZawJBU6XUpbZm6ilu0qqNOLnQ&s) no-repeat center;
     background-size: cover;
 }
 
@@ -3029,5 +3066,314 @@ p {
     to {
         opacity: 0;
         transform: scale(1.5);
+    }
+}
+
+
+
+
+:root {
+    --primary-color: #6c5ce7;
+    --bg-color: #2b2b2c;
+    --text-color: #ffffff;
+    --card-bg: rgb(214, 145, 16);
+    --input-bg: #0f3460;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact {
+    padding: 100px 0;
+}
+
+.main-text {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.main-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.main-text p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.contact-card {
+    flex-basis: 30%;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+}
+
+.card-front {
+    z-index: 2;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.contact-card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.contact-card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.contact-card i {
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-card h3 {
+    font-size: 2.5rem;
+}
+
+.contact-card a, .contact-card p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group input:not(:placeholder-shown),
+.form-group textarea:not(:placeholder-shown) {
+    outline: none;
+    border-bottom-color: var(--primary-color);
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -20px;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background-color: #5b4cc7;
+}
+
+.footer {
+    background-color: var(--card-bg);
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.footer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.footer-social a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #2a2a4a;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-card {
+        margin-bottom: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-links, .footer-social {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-form h3 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+.contact-form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.block-title {
+    font-size: 6rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    
+}
+
+iframe {
+    width: 100%;
+    max-width: 870px;
+    height: 250px;
+    border: none;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .contact-form {
+        padding: 10px;
+    }
+
+    .block-title {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .block-title {
+        font-size: 1.2rem;
+    }
+
+    iframe {
+        height: 150px;
     }
 }

@@ -2271,6 +2271,18 @@ video {
     border-radius: 8px;
 }
 
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .video-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    video {
+        width: 30%;
+    }
+}
 
 .slick-track:before,
 .slick-track:after {

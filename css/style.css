@@ -365,10 +365,10 @@ body {
 -------------------------------------------------------------------*/
 
 .banner {
-    background: url(../images/homegate\ \(1\).png) no-repeat center top;
+    background: url(../img/gate.jpg) no-repeat center top;
     background-attachment: fixed;
     background-size: cover;
-    height: 130vh;
+    height: 40vh;
     min-height: 100%;
     
 }
@@ -871,7 +871,7 @@ font-size: 30px;
 }
 
 .tab-menu {
-    background: #a78a8a;
+    background: #ffffff;
     padding: 2px 0px;
     box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.05);
 }
@@ -883,8 +883,8 @@ font-size: 30px;
 }
 
 .offer-item img {
-    width: 32%;
-    height: 40%;
+    width: 26%;
+    height: 30%;
     float: left;
     padding: 10px;
     background: #fff;
@@ -2259,6 +2259,18 @@ p {
 
     display: block;
 }
+
+.video-container {
+    display: flex;
+    gap: 20px;
+}
+
+video {
+    max-width: 45%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
 
 .slick-track:before,
 .slick-track:after {

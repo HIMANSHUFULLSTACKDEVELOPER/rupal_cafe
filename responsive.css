@@ -1,0 +1,155 @@
+
+
+
+@media (max-width: 992px) {
+	.banner-text h1{
+		font-size: 50px;
+	}
+	.banner-cell .mouse{
+		display:none;
+	}
+	.footer-box-a, .footer-box-b, .footer-box-c, .footer-box-d{
+		margin-bottom:20px;
+	}
+	
+	.panel-body p strong{
+		font-size: 28px;
+	}
+}  
+@media (max-width: 1000px) {}
+
+@media (min-width: 768px) {
+.gal-container .modal-dialog {
+    width: 55%;
+    margin: 50 auto;
+	}
+.banner-cell .mouse:after {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    width: calc(4px * 4);
+    height: calc(4px * 4);
+  }
+ .banner-cell .mouse {
+    width: calc(16px * 4);
+    height: calc(31px * 4);
+    margin: 70px auto 0px;
+    background: none;
+    border: 2px solid white;
+    border-radius: calc(16px * 4);
+  }
+}
+@media (max-width: 768px) {
+    .gal-container .modal-content{
+        height:250px;
+    }
+}
+@media (max-width: 768px) {
+	
+	.banner {
+		min-height: 800px !important;
+		background-size: inherit;
+	}
+	.banner {
+		background: url(../images/f4200489-8952-4fec-a4fe-a16df9c91ac6.png) no-repeat center top;
+		background-attachment: fixed;
+		background-size: cover;
+		height: 50vh;
+		width: 100%;
+	}
+	.team-main{
+		background-size: inherit;
+	}
+	.blog-main{
+		background-size: inherit;
+	}
+	.special-menu{
+		background-size: inherit;
+	}
+	.banner-text h1 {
+		font-size: 50px;
+		line-height: 62px;
+	}
+	.banner-text h2{
+		font-size: 24px;
+	}
+	.block-title{
+		font-size: 34px;
+	}
+	.title-caption{
+		padding: 20px 10px;
+		line-height: 28px !important;
+	}
+	.offer-item img{
+		width: 15%;
+		margin: 0 auto;
+		float: none;
+	}
+	.offer-item .offer-price{
+		width: 65px;
+		height: 65px;
+		line-height: 65px;
+		font-size: 18px;
+		display:none;
+	}
+	.offer-item div{
+		width: 70%;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align:center;
+		margin:0 auto;
+		float:none;
+	}
+	.offer-item div h3{
+		font-size: 16px;
+	}
+	
+	.sf-team{
+		margin-bottom:20px;
+	}
+	.blog-img-box {
+		float: none;
+		width: 100%;
+	}
+	.pricing-main p{
+		padding:0px 15px;
+		margin-bottom:15px;
+	}
+	
+	.blog-dit{
+		width: 100%;
+		padding: 10px 2% 0 2%;
+	}
+	.form-reservations-box{
+		width: 100%;
+	}
+	
+	.footer-box-a, .footer-box-b, .footer-box-c, .footer-box-d{
+		margin-bottom:20px;
+	}
+	
+}
+@media (max-width: 600px) {
+	
+}
+@media (max-width: 480px) {
+	.offer-item img{
+		width: 50%;
+	}
+	.offer-item .offer-price{
+		width: 65px;
+		height: 65px;
+		line-height: 65px;
+		font-size: 18px;
+		display:none;
+	}
+	.offer-item div{
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: center;
+	}
+	.offer-item div h3{
+		font-size: 16px;
+	}
+}

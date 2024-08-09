@@ -59,10 +59,10 @@
                         <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#our_team" class="nav-link">Menu</a>
+                        <a href="#menu" class="nav-link">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#our_team" class="nav-link">Team</a>
+                        <a href="#team" class="nav-link">Team</a>
                     </li>
                     <li class="nav-item">
                         <a href="#booking" class="nav-link">Booking Table</a>
@@ -89,12 +89,13 @@
                 <div class="banner-static">
                     <div class="banner-text">
                         <div class="banner-cell">
-                            <h1> Wel come <br> to
-                                Rupal Fired <br> Oven </h1>
+                            <h1> Wel come
+                            </h1>
                             <h2>Fun. Fast. <br> Tasty. Delicious. </h2>
 
                             <div class="book-btn">
-                                <a href="https://rupalfiredoven.inmyarea.in/" class="stable-btn hvr-underline-from-center">View Menu</a>
+                                <a href="https://rupalfiredoven.inmyarea.in/"
+                                    class="stable-btn hvr-underline-from-center">View Menu</a>
                             </div>
                             <a href="#about">
                                 <div class="mouse"></div>
@@ -197,8 +198,7 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="blog-block">
                                 <div class="blog-img-box">
-                                    <img src="./offer/1.jpg"
-                                        alt="" height="520px" width="500px" />
+                                    <img src="./offer/1.jpg" alt="" height="520px" width="500px" />
 
                                 </div>
                                 <div class="blog-dit">
@@ -229,8 +229,7 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="blog-block">
                                 <div class="blog-img-box">
-                                    <img src="./offer/3.jpg"
-                                        alt="" height="520px" width="500px" />
+                                    <img src="./offer/3.jpg" alt="" height="520px" width="500px" />
 
                                 </div>
                                 <div class="blog-dit">
@@ -285,7 +284,7 @@
                         <h2 class="block-title color-white text-center"> Today's new Special </h2>
                         <h5 class="title-caption text-center">"One cannot think well, love well, sleep well, if one has
                             not dined well." </h5>
-                            
+
                     </div>
                     <div class="special-box">
                         <div id="owl-demo">
@@ -374,7 +373,8 @@
 
                     </div>
                     <div class="book-btn" style="text-align: center;">
-                        <a href="https://rupalfiredoven.inmyarea.in/" class="stable-btn hvr-underline-from-center" >View Menu</a>
+                        <a href="https://rupalfiredoven.inmyarea.in/" class="stable-btn hvr-underline-from-center">View
+                            Menu</a>
                         <br><br>
                         <br>
                     </div>
@@ -1105,10 +1105,7 @@
     </div>
     <!-- end menu -->
 
-    <!-- Add this at the end of your HTML body, just before the closing </body> tag -->
 
-    <!-- Hidden form -->
-    <!-- Add this at the end of your HTML body, just before the closing </body> tag -->
 
     <!-- Hidden form -->
     <div id="orderForm"
@@ -1124,134 +1121,71 @@
         </form>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get all elements with class "table-btn hvr-underline-from-center"
-            var orderButtons = document.querySelectorAll(".table-btn.hvr-underline-from-center");
-
-            // Add click event listener to each button
-            orderButtons.forEach(function (button) {
-                button.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    document.getElementById("orderForm").style.display = "block";
-                });
-            });
-
-            // Close form when clicking the close button
-            document.getElementById("closeForm").addEventListener("click", function () {
-                document.getElementById("orderForm").style.display = "none";
-            });
-
-            // Handle form submission
-            document.getElementById("menuItemOrder").addEventListener("submit", function (e) {
-                e.preventDefault();
-                // Here you would typically send this data to your server
-                alert("Order submitted successfully!");
-                document.getElementById("menuItemOrder").style.display = "none"; // Hide the form after submission
-
-                // Open WhatsApp with a pre-filled message
-                var phoneNumber = "+918956214342"; // Replace with your phone number
-                var message = "Hello, I would like to place an order."; // Replace with your custom message
-                var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
-                window.open(whatsappUrl, "_blank");
-            });
-
-        });
-    </script>
 
 
+    <!---------------------------------- owner team=---------------------------------------- -->
 
+    <div class="container" id="team">
+        <h2 class="block-title text-center">
+            Our Team
+        </h2>
+        <p class="title-caption text-center">"Talent wins games, but teamwork and intelligence win
+            championships." <br>"Alone we can do so little; together we can do so much."</p>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="./staff/2.jpg" alt="Mary Brown">
+                <p>Rupesh Dongre</p>
+                <h3>(Owner)</h3>
 
-    <div id="our_team" class="team-main pad-top-100 pad-bottom-100 parallax">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <h2 class="block-title text-center">
-                            Our Team
-                        </h2>
-                        <p class="title-caption text-center">"Talent wins games, but teamwork and intelligence win
-                            championships." <br>"Alone we can do so little; together we can do so much."</p>
-                    </div>
-                    <div class="team-box">
-
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6">
-                                <div class="sf-team">
-                                    <div class="thumb">
-                                        <a href="#dgg"><img
-                                                src="./staff/2.jpg"
-                                                alt="" height="450px"></a>
-                                    </div>
-                                    <div class="text-col">
-                                       
-                                            <h3>MR.</h3>
-                                            <p>Rupesh Dongre</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="sf-team">
-                                    <div class="thumb">
-                                        <a href="#dg"><img
-                                                src="./staff/WhatsApp Image 2024-08-05 at 09.16.57_e99f6305.jpg"
-                                                alt="" height="450px"></a>
-                                    </div>
-                                    <div class="text-col">
-                                    <h3>MRS.</h3>
-                                        <p>Pranali Dongre</p>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="sf-team">
-                                    <div class="thumb">
-                                        <a href="#cbd"><img
-                                                src="./staff/2.jpg"
-                                                alt=""  height="450px"></a>
-                                    </div>
-                                    <div class="text-col">
-                                        <h3>MR.</h3>
-                                        <p>Rupesh Dongre (Owner)</p>
-                                        <h3>Owner</h3>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                    </div>
-                    <!-- end team-box -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/rupal_fired_oven/?hl=en" class="facebook"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></a>
+                    <a href="https://www.facebook.com/profile.php?id=100083320480040" class="twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg></a>
 
                 </div>
-                <!-- end col -->
             </div>
-            <!-- end row -->
+            <div class="team-member">
+                <img src="./staff/1.jpg" alt="Ann Richmond">
+                <p>Pranali Dongre</p>
+                <h3>(Owner)</h3>
+
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/rupal_fired_oven/?hl=en" class="facebook"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></a>
+                    <a href="https://www.facebook.com/profile.php?id=100083320480040" class="twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg></a>
+
+                </div>
+            </div>
         </div>
-        <!-- end container -->
     </div>
-    <!-- end team-main -->
-
-
 
     <!-- booking table -->
 
     <div id="booking" class="reservations-main pad-top-100 pad-bottom-100">
-        <br><br><br><br>
-        <h2 class="block-title text-center" class="btnn" style="margin-top: -190px;">
-            Book A Table
-        </h2>
+
+
         <div class="container">
             <div class="row">
                 <div class="form-reservations-box">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                          
+
 
                             <div class="blogs-main pad-top-100 pad-bottom-100 parallax">
                                 <div class="container">
@@ -1271,33 +1205,33 @@
 
                                         </div>
                                         <!-- end col -->
-    
-        <!-- end container -->
-    </div>
 
-                                        <div style="margin: -22px;" class="blog-btn-v">
-                                            <a class="hvr-underline-from-center"
-                                                href="https://docs.google.com/forms/d/e/1FAIpQLScLYQeRhzFcXmQlG3Cj0-jM_z92vvQGobjPB4UGVaB1CDJsOA/viewform?usp=sf_link">Booking
-                                                Table & Party </a>
-                                        </div>
-
-
+                                        <!-- end container -->
                                     </div>
-                                    <!-- end col -->
+
+                                    <div style="margin: -22px;" class="blog-btn-v">
+                                        <a class="hvr-underline-from-center"
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLScLYQeRhzFcXmQlG3Cj0-jM_z92vvQGobjPB4UGVaB1CDJsOA/viewform?usp=sf_link">Booking
+                                            Table & Party </a>
+                                    </div>
+
+
                                 </div>
-                                <!-- end row -->
+                                <!-- end col -->
                             </div>
-                            <!-- end container -->
+                            <!-- end row -->
                         </div>
-                        <!-- end blog-main -->
+                        <!-- end container -->
                     </div>
-                    <!-- end col -->
+                    <!-- end blog-main -->
                 </div>
-                <!-- end reservations-box -->
+                <!-- end col -->
             </div>
-            <!-- end row -->
+            <!-- end reservations-box -->
         </div>
-        <!-- end container -->
+        <!-- end row -->
+    </div>
+    <!-- end container -->
     </div>
     <!-- end reservations-main -->
 
@@ -1310,9 +1244,10 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
                         <h2 class="block-title text-center">
-                            Our Gallery
+                            Gallery
                         </h2>
-                        <p class="title-caption text-center" style="color: rgb(55, 54, 54);">There are Images Of cafe
+                        <p class="title-caption text-center" style="color: rgb(55, 54, 54);">There are Images Of Rupal
+                            cafe
                             available </p>
                     </div>
                     <div class="gal-container clearfix">
@@ -1539,7 +1474,7 @@
                                 </div>
                             </div>
                         </div>
-                       
+
                     </div>
                     <!-- end gal-container -->
                 </div>
@@ -1553,9 +1488,9 @@
             </video>
             <video controls>
                 <source src="./video/2.mp4" type="video/mp4">
-                
+
             </video>
-          
+
         </div>
         <!-- end container -->
     </div>
@@ -1568,8 +1503,8 @@
             <h2 class="block-title text-center">
                 Contact Me
             </h2>
-            <p class="title-caption text-center">There are Images Of cafe
-                available </p>
+            <p class="title-caption text-center">
+            </p>
 
             <div class="contact-content">
                 <div class="contact-card">
@@ -1651,19 +1586,19 @@
                                 <ul class="socials-box footer-socials pull-left">
                                     <li>
                                         <a href="https://www.facebook.com/profile.php?id=100083320480040">
-                                            <div class="social-circle-border">facebook</div>
+                                            <div class="social-circle-border">Facebook</div>
                                         </a>
                                     </li>
                                     <br>
                                     <li>
                                         <a href="https://www.instagram.com/rupal_fired_oven/?hl=en">
-                                            <div class="social-circle-border">instragram</div>
+                                            <div class="social-circle-border">Instragram</div>
                                         </a>
                                     </li>
                                     <br>
                                     <li>
                                         <a href="tel:+918956214342">
-                                            <div class="social-circle-border">whatapp</div>
+                                            <div class="social-circle-border">Whatapp</div>
                                         </a>
                                     </li>
                                     <br>
@@ -1757,7 +1692,13 @@
     <a href="#" class="scrollup" style="display: none;">Scroll</a>
 
     <section id="color-panel" class="close-color-panel">
-        <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
+        <a class="panel-button gray2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-palette" viewBox="0 0 16 16">
+                <path
+                    d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                <path
+                    d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8m-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7" />
+            </svg></a>
         <!-- Colors -->
         <div class="segment">
             <h4 class="gray2 normal no-padding">Color Scheme</h4>

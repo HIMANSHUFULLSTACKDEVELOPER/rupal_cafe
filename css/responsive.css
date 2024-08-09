@@ -85,13 +85,7 @@
 		margin: 0 auto;
 		float: none;
 	}
-	.offer-item .offer-price{
-		width: 65px;
-		height: 65px;
-		line-height: 65px;
-		font-size: 18px;
-		display:none;
-	}
+
 	.offer-item div{
 		width: 70%;
 		padding-left: 10px;
@@ -136,13 +130,7 @@
 	.offer-item img{
 		width: 50%;
 	}
-	.offer-item .offer-price{
-		width: 65px;
-		height: 65px;
-		line-height: 65px;
-		font-size: 18px;
-		display:none;
-	}
+	
 	.offer-item div{
 		width: 100%;
 		padding-left: 10px;

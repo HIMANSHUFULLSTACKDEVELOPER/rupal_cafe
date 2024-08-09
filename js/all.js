@@ -7026,3 +7026,52 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+
+// staff
+document.addEventListener('DOMContentLoaded', function() {
+  const teamMembers = document.querySelectorAll('.team-member');
+  teamMembers.forEach(member => {
+      member.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-5px)';
+      });
+      member.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+      });
+  });
+});
+
+
+// order form
+document.addEventListener('DOMContentLoaded', function () {
+  // Get all elements with class "table-btn hvr-underline-from-center"
+  var orderButtons = document.querySelectorAll(".table-btn.hvr-underline-from-center");
+
+  // Add click event listener to each button
+  orderButtons.forEach(function (button) {
+      button.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.getElementById("orderForm").style.display = "block";
+      });
+  });
+
+  // Close form when clicking the close button
+  document.getElementById("closeForm").addEventListener("click", function () {
+      document.getElementById("orderForm").style.display = "none";
+  });
+
+  // Handle form submission
+  document.getElementById("menuItemOrder").addEventListener("submit", function (e) {
+      e.preventDefault();
+      // Here you would typically send this data to your server
+      alert("Order submitted successfully!");
+      document.getElementById("menuItemOrder").style.display = "none"; // Hide the form after submission
+
+      // Open WhatsApp with a pre-filled message
+      var phoneNumber = "+918956214342"; // Replace with your phone number
+      var message = "Hello, I would like to place an order."; // Replace with your custom message
+      var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+      window.open(whatsappUrl, "_blank");
+  });
+
+});

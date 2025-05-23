@@ -365,7 +365,7 @@ body {
 -------------------------------------------------------------------*/
 
 .banner {
-    background: url(../img/gate.jpg) no-repeat center top;
+    background: url(../assets/img/gate.jpg) no-repeat center top;
     background-attachment: fixed;
     background-size: cover;
     height: 40vh;
